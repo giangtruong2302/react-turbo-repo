@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "react-turbo",
   "private": true,
   "scripts": {
     "build": "turbo run build",
