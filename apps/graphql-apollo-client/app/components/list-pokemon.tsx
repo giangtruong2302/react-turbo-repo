@@ -2,7 +2,6 @@
 import { gql, useQuery } from "@apollo/client";
 import React, { useState } from "react";
 import { IPokemon } from "../types";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import CardPokemon from "./card-pokemon";
 
@@ -24,20 +23,20 @@ const GET_POKEMONS = gql`
   }
 `;
 
-const GET_POKEMON_TYPE = gql`
-  {
-    __type(name: "Pokemon") {
-      name
-      fields {
-        name
-        type {
-          name
-          kind
-        }
-      }
-    }
-  }
-`;
+// const GET_POKEMON_TYPE = gql`
+//   {
+//     __type(name: "Pokemon") {
+//       name
+//       fields {
+//         name
+//         type {
+//           name
+//           kind
+//         }
+//       }
+//     }
+//   }
+// `;
 
 const ListPokemon = () => {
   const router = useRouter();

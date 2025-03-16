@@ -1,4 +1,3 @@
-import Header from "./components/header";
 import ListPokemon from "./components/list-pokemon";
 
 export default function Home() {
